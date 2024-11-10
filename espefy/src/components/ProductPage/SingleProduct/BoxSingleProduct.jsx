@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import QuickViewModal from './QuickViewModal'; // Ensure the path is correct
+import QuickViewModal from './QuickViewModal';  
 
 const BoxSingleProduct = ({ productName, productImage, productDescription, productPrice }) => {
   // State to control modal visibility

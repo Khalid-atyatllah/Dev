@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaTimes } from 'react-icons/fa';
-import Button from '../../Button'; // Correct path to Button.jsx
-
+import Button from '../../Button';  
 const QuickViewModal = ({ isOpen, product, onClose }) => {
   // If modal is not open, return null
   if (!isOpen) return null;

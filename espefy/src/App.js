@@ -1,10 +1,9 @@
-// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import GiftBoxSPA from './pages/GiftBoxSPA';
 import NotFoundPage from './pages/NotFoundPage'; 
-import Auth from './pages/Auth'; // Import Auth for sign in, sign up, forget password
+import Auth from './pages/Auth';
 import Footer from './layouts/Footer';
 import NavBar from './layouts/NavBar'; 
 

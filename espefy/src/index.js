@@ -1,4 +1,3 @@
-// src/index.js
 import './tailwind.css';
 import App from './App';
 

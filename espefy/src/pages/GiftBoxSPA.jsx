@@ -1,4 +1,3 @@
-// C:\Users\hp 850 G 5\Documents\react\espefy\src\pages\GiftBoxSPA.jsx
 import React, { useState } from 'react';
 import Header from '../layouts/Header';
 import BoxSelectionLayout from '../layouts/BoxSelectionLayout';

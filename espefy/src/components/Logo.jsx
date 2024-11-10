@@ -1,6 +1,5 @@
-// src/components/Logo.jsx
 import React from 'react';
-import espefyLogo from '../assets/images/espe.png'; // Adjust the import to match your image name and path
+import espefyLogo from '../assets/images/espe.png';  
 
 const Logo = () => {
   return (
