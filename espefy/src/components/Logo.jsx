@@ -5,7 +5,7 @@ const Logo = () => {
   return (
     <img
       alt="Espefy Logo"
-      src={espefyLogo} // Use the imported image instead of a string path
+      src={espefyLogo} 
       className="h-8 w-auto"
     />
   );
