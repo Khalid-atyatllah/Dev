@@ -39,9 +39,11 @@ const Footer = () => {
       <div className="w-full sm:w-7/12 md:w-1/4 text-center sm:text-left">
         <h2 className="uppercase mb-6 text-2xl md:text-4xl font-title font-black text-white">Nous contacter</h2>
         <p className="mb-6 text-white">Des questions? Nous sommes là pour vous du lundi au vendredi, de 9 h à 17 h.</p>
-        <div className="border-t-2 border-b-2 border-white py-2 mb-6">
-          <a href="mailto:hello@espefy.ma" className="text-white">hello@espefy.ma</a>
-        </div>
+  <div className="border-t-2 border-white py-2 mb-6">
+    <a href="mailto:hello@espefy.ma" className="text-white">
+      <span className="border-b-2 border-white inline-block pb-1">hello@espefy.ma</span>
+    </a>
+  </div>
         <div>
           <ul className="flex justify-center sm:justify-start text-lg">
             <li className="mr-4">

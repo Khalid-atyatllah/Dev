@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon, UserIcon } from '@heroicons/react/24/outline'; // Import the User icon
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
 import Logo from '../components/Logo'; // Ensure this import is correct
 
 export default function NavBar() {
@@ -18,29 +19,23 @@ export default function NavBar() {
 
         {/* Center - Navigation links */}
         <div className="flex-1 flex justify-center space-x-8">
-          <a href="/" className="text-sm font-semibold hover:text-gold transition duration-300">
+          <Link to="/" className="text-sm font-semibold hover:text-gold transition duration-300">
             Home
-          </a>
-          <a href="/gift-box" className="text-sm font-semibold hover:text-gold transition duration-300">
+          </Link>
+          <Link to="/gift-box" className="text-sm font-semibold hover:text-gold transition duration-300">
             Gift Box
-          </a>
+          </Link>
           <a href="#" className="text-sm font-semibold hover:text-gold transition duration-300">
             About Us
           </a>
         </div>
 
         <div className="flex items-center space-x-6">
-          <form className="relative">
-            <input
-              type="text"
-              placeholder="Search"
-              className="border-white rounded-md border w-full py-3 px-6 focus:outline-none bg-transparent text-white"
-            />
-          </form>
-          <a href="#" className="flex items-center text-sm font-semibold hover:text-gold transition duration-300">
+
+          <Link to="/auth" className="flex items-center text-sm font-semibold hover:text-gold transition duration-300">
             <UserIcon className="h-5 w-5 mr-1" aria-hidden="true" /> {/* Sign In icon */}
             Sign In
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
@@ -74,21 +69,21 @@ export default function NavBar() {
             </button>
           </div>
           <div className="mt-6 space-y-6 border-t border-gray-200 pt-6">
-            <a href="#" className="block text-base font-semibold text-white hover:text-gold transition duration-300">
+            <Link to="/" className="block text-base font-semibold text-white hover:text-gold transition duration-300">
               Home
-            </a>
-            <a href="#" className="block text-base font-semibold text-white hover:text-gold transition duration-300">
+            </Link>
+            <Link to="/gift-box" className="block text-base font-semibold text-white hover:text-gold transition duration-300">
               Gift Box
-            </a>
+            </Link>
             <a href="#" className="block text-base font-semibold text-white hover:text-gold transition duration-300">
               About Us
             </a>
           </div>
           <div className="mt-6 border-t border-gray-200 pt-6">
-            <a href="#" className="block text-base font-semibold text-white hover:text-gold transition duration-300">
+            <Link to="/auth" className="block text-base font-semibold text-white hover:text-gold transition duration-300">
               <UserIcon className="h-5 w-5 inline mr-1" aria-hidden="true" /> {/* Sign In icon in mobile menu */}
               Sign In
-            </a>
+            </Link>
           </div>
         </Dialog.Panel>
       </Dialog>
