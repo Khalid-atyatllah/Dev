@@ -34,7 +34,7 @@ const ProductPage = ({ title, onContinue, onBack }) => (
       productName="Basic Tee"
       productImage="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-02.jpg"
       productDescription="Aspen White"
-      productPrice="$35"
+      productPrice="35"
     />
   </div>
 

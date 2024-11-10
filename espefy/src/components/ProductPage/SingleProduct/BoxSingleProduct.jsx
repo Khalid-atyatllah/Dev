@@ -1,28 +1,34 @@
 import React from 'react';
+import { FaShoppingCart, FaEye } from 'react-icons/fa';
 
 const BoxSingleProduct = ({ productName, productImage, productDescription, productPrice }) => {
   return (
-    <div className="group relative p-4 bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-      <div className="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-100 group-hover:opacity-90 transition-opacity duration-300">
+    <div className="group relative p-6 bg-black rounded-xl border-2 border-white shadow-md hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+      <div className="w-full h-60 overflow-hidden rounded-lg mb-4">
         <img
           src={productImage}
           alt={productName}
-          className="h-48 w-full object-cover object-center rounded-t-md"
+          className="w-full h-full object-cover object-center transform transition-all duration-300 ease-in-out group-hover:scale-110"
         />
       </div>
-      <div className="mt-4 flex flex-col items-center text-center">
-        <h3 className="text-md font-semibold text-gray-900 hover:text-gray-700 transition-colors duration-200">
-          {productName}
-        </h3>
-        <p className="text-sm text-gray-500 mt-1">{productDescription}</p>
-        <p className="mt-3 text-lg font-medium text-gray-900">{productPrice}</p>
+      <div className="text-center text-white">
+        <h3 className="text-lg font-semibold text-white mb-2">{productName}</h3>
+        <p className="text-sm text-gray-400 mb-3">{productDescription}</p>
+        <p className="mt-3 text-lg font-medium text-white">{productPrice}
+          <span className="text-gold"> MAD</span>
+        </p>
       </div>
-      <button
-        className="mt-4 w-full py-2 bg-indigo-600 text-white rounded-md text-sm font-medium hover:bg-indigo-500 transition-colors duration-200"
-        type="button"
-      >
-        Add to Cart
-      </button>
+      
+      <div className="absolute bottom-6 left-0 right-0 px-4 flex justify-between gap-4">
+        {/* Add to Cart Icon */}
+        <button className="text-white text-2xl p-2 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
+          <FaShoppingCart />
+        </button>
+        {/* View Details Icon */}
+        <button className="text-white text-2xl p-2 rounded-full border-2 border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out">
+          <FaEye />
+        </button>
+      </div>
     </div>
   );
 };
