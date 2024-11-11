@@ -8,7 +8,7 @@ import ChocolatesSingleProduct from './SingleProduct/ChocolatesSingleProduct';
 
 
 const ChocolatesProductPage = ({ title, onContinue, onBack }) => (
-  <div className="p-6 bg-black text-white rounded shadow-md">
+  <div className="p-6   text-white rounded shadow-md">
     {/* Header */}
     <div className="flex items-baseline justify-between border-b border-gray-600 pb-6 pt-24">
       <h1 className="text-4xl font-bold tracking-tight text-white">{title}</h1>

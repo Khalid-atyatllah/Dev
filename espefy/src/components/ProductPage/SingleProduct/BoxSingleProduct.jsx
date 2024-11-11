@@ -18,7 +18,7 @@ const BoxSingleProduct = ({ productName, productImage, productDescription, produ
   };
 
   return (
-    <div className="group relative p-6 bg-black rounded-xl border-2 border-white shadow-md hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+    <div className="group relative p-6   rounded-xl border-2 border-white shadow-md hover:shadow-2xl transition-shadow duration-300 ease-in-out">
       <div className="w-full h-60 overflow-hidden rounded-lg mb-4">
         <img
           src={productImage}

@@ -22,7 +22,7 @@ const Auth = () => {
 
   return (
     <div className="flex  justify-center items-center min-h-[70vh]  text-white">
-      <div className="p-8 w-full border-white rounded-md border-4 max-w-md bg-black rounded-md shadow-lg">
+      <div className="p-8 w-full border-white rounded-md border max-w-md  rounded-md shadow-lg">
         {renderAuthComponent()}
       </div>
     </div>

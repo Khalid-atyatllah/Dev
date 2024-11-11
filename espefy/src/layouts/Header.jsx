@@ -1,9 +1,15 @@
-// C:\Users\hp 850 G 5\Documents\react\espefy\src\layouts\Header.jsx
 import React from 'react';
+import slideImage from '../assets/images/slide.jpeg'; // Import the image
 
 const Header = () => (
-  <header className="absolute inset-x-0 top-0 z-50 bg-white">
-
+  <header
+    className="relative w-full h-[70vh] bg-cover bg-center" // 70% of the viewport height
+    style={{
+      backgroundImage: `url(${slideImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+    }}
+  >
   </header>
 );
 

@@ -8,7 +8,7 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-black text-white border-b border-gray-600">
+    <header className=" text-white border-b border-gray-600">
       <nav className="mx-auto flex items-center justify-between p-4 lg:px-8" aria-label="Global">
         {/* Left side - Logo */}
         <div className="flex items-center space-x-6">

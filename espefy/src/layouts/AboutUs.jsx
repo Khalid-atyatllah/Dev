@@ -10,7 +10,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section id="about-us" className="bg-black text-white py-12 px-6">
+    <section id="about-us" className=" text-white py-12 px-6">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">About Us</h2>
         <p className="text-lg mb-6">
