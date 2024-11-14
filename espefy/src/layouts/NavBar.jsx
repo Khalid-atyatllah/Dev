@@ -8,7 +8,7 @@ export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className=" text-white border-b border-gray-600">
+    <header className=" text-white border-b border-brown6d ">
       <nav className="mx-auto flex items-center justify-between p-4 lg:px-8" aria-label="Global">
         {/* Left side - Logo */}
         <div className="flex items-center space-x-6">
@@ -19,21 +19,21 @@ export default function NavBar() {
 
         {/* Center - Navigation links */}
         <div className="flex-1 flex justify-center space-x-8">
-          <Link to="/" className="text-sm font-semibold hover:text-gold transition duration-300">
+          <Link to="/" className="text-sm text-beigeB2 font-semibold hover:text-gold transition duration-300">
             Home
           </Link>
-          <Link to="/gift-box" className="text-sm font-semibold hover:text-gold transition duration-300">
+          <Link to="/gift-box" className="text-sm text-beigeB2 font-semibold hover:text-gold transition duration-300">
             Gift Box
           </Link>
           {/* Update About Us link */}
-          <a href="#about-us" className="text-sm font-semibold hover:text-gold transition duration-300">
+          <a href="#about-us" className="text-sm text-beigeB2 font-semibold hover:text-gold transition duration-300">
             About Us
           </a>
         </div>
 
         <div className="flex items-center space-x-6">
-          <Link to="/auth" className="flex items-center text-sm font-semibold hover:text-gold transition duration-300">
-            <UserIcon className="h-5 w-5 mr-1" aria-hidden="true" /> {/* Sign In icon */}
+          <Link to="/auth" className="flex items-center text-beigeB2 text-sm font-semibold hover:text-gold transition duration-300">
+            <UserIcon className="h-5 text-gold w-5 mr-1" aria-hidden="true" /> {/* Sign In icon */}
             Sign In
           </Link>
         </div>

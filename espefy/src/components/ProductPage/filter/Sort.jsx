@@ -6,16 +6,16 @@ export default function Sort() {
   const toggleMenu = () => setOpen(!open);
 
   return (
-    <div className="relative inline-block text-left bg-black text-white">
+    <div className="relative inline-block bg-black rounded-lg  bg-opacity-20 backdrop-blur-lg   text-left  text-brown6d">
       <button
         type="button"
-        className="group inline-flex justify-center text-sm font-medium text-gray-300 "
+        className="group inline-flex justify-center text-sm font-medium text-gold "
         onClick={toggleMenu}
         aria-expanded={open ? "true" : "false"}
       >
         Sort
         <svg
-          className="-mr-1 ml-1 h-5 w-5 shrink-0 text-gray-400 group-hover:text-gold"
+          className="-mr-1 ml-1 h-5 w-5 shrink-0 text-brown432 group-hover:text-gold"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"

@@ -7,7 +7,7 @@ const QuickViewModal = ({ isOpen, product, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 bg-black bg-opacity-50 backdrop-blur-lg flex justify-center items-center">
-      <div className="relative bg-black border-2 border-white rounded-lg p-6 w-4/5 max-w-4xl">
+      <div className="relative bg-black border-2 border-brown432 rounded-lg p-6 w-4/5 max-w-4xl">
         {/* Close Button */}
         <button onClick={onClose} className="absolute top-4 right-4 text-white text-xl">
           <FaTimes />

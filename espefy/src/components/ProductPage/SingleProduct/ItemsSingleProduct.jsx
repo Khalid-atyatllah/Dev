@@ -19,7 +19,7 @@ const ItemsSingleProduct = ({ productName, productImage, productDescription, pro
   };
 
   return (
-    <div className="group relative p-6   rounded-xl border-2 border-white shadow-md hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+    <div className="group relative p-6  bg-beigeB2 rounded-xl border-2 border-brown432 shadow-md hover:shadow-2xl transition-shadow duration-300 ease-in-out">
       <div className="w-full h-60 overflow-hidden rounded-lg mb-4">
         <img
           src={productImage}
@@ -28,8 +28,8 @@ const ItemsSingleProduct = ({ productName, productImage, productDescription, pro
         />
       </div>
       <div className="text-center text-white">
-        <h3 className="text-lg font-semibold text-white mb-2">{productName}</h3>
-        <p className="text-sm text-gray-400 mb-3">{productDescription}</p>
+        <h3 className="text-lg font-semibold text-brown432 mb-2">{productName}</h3>
+        <p className="text-sm text-white mb-3">{productDescription}</p>
         <p className="mt-3 text-lg font-medium text-white">
           {productPrice}
           <span className="text-gold"> MAD</span>

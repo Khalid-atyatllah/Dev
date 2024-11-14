@@ -10,7 +10,7 @@ import ItemsSingleProduct from './SingleProduct/ItemsSingleProduct';
 const ItemsProductPage = ({ title, onContinue, onBack }) => (
   <div className="p-6   text-white rounded shadow-md">
     {/* Header */}
-    <div className="flex items-baseline justify-between border-b border-gray-600 pb-6 pt-24">
+    <div className="flex items-baseline justify-between border-b border-gold pb-6 pt-24">
       <h1 className="text-4xl font-bold tracking-tight text-white">{title}</h1>
       <div className="flex items-center">
         <Sort />
@@ -27,7 +27,7 @@ const ItemsProductPage = ({ title, onContinue, onBack }) => (
       </div>
 
       {/* products */}
-      <div className="w-7/10  bg-black p-4 rounded-lg">
+      <div className="w-7/10  bg-opacity-20 backdrop-blur-lg    bg-white p-4 rounded-lg">
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <ItemsSingleProduct
