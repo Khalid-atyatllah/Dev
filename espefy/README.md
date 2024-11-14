@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# **Espefy - Gift Box Website**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Overview
+**Espefy** is an **e-commerce website** that allows users to browse and purchase personalized gift boxes and chocolates. The website is a mix of a **Single Page Application (SPA)** and a **Multi-Page Application (MPA)**.
 
-## Available Scripts
+- **GiftBoxSPA**: A **Single Page Application (SPA)** that handles the interactive multi-step process of selecting a gift box, chocolates, and additional items.
+- **E-commerce Features**: Users can browse products, select different options, and make purchases.
 
-In the project directory, you can run:
+This project combines the responsiveness and smooth user experience of a SPA with the SEO and server-side benefits of an MPA. The front-end was built with **React** and **Tailwind CSS** for a highly responsive, component-based design with streamlined styling.
 
-### `npm start`
+### Features
+- **Authentication Flow**:
+  - **Sign In**: Users can sign in with their credentials.
+  - **Sign Up**: Users can create a new account.
+  - **Forget Password**: Users can reset their passwords if they forget them.
+  
+- **Gift Box Selection (SPA)**:
+  - A multi-step, dynamic gift box selection process.
+  - Users can choose a gift box, chocolates, and additional items in a seamless, single-page flow.
+  
+- **Home Page (MPA)**:
+  - Displays information about the website, products, and company, built using traditional multi-page routing.
+  
+- **404 Page (MPA)**:
+  - A custom "Page Not Found" error page with an option to return to the homepage or contact support.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Folder Structure
+Here’s a brief overview of the key folders and files:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **`public/`**: Contains static files like HTML, images, and the manifest for the app.
+- **`src/`**: The source code of the app.
+  - **`components/`**: Reusable UI components (buttons, inputs, modals).
+  - **`layouts/`**: Layout components that define the structure of the app’s pages (e.g., authentication, selection layouts).
+  - **`pages/`**: Top-level page components representing different routes like `Auth`, `GiftBoxSPA`, `HomePage`, and `NotFoundPage`.
+  - **`App.js`**: Main component for handling routing and wrapping the app.
+  - **`index.js`**: Renders the React app into the DOM.
 
-### `npm test`
+### Important Files & Components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### **1. Authentication (Auth.jsx)**
+- **SignIn, SignUp, ForgetPassword**: Three core components that handle user authentication.
+- The `Auth.jsx` component toggles between these authentication views based on user actions.
 
-### `npm run build`
+#### **2. Gift Box Selection (GiftBoxSPA.jsx)**
+- **Step-by-Step Selection (SPA)**: Users go through a multi-step selection process for picking a gift box, chocolates, and additional items.
+- The flow is handled by updating the `step` state, with `BoxSelectionLayout`, `ChocolateSelectionLayout`, and `AdditionalItemsLayout` being rendered based on the current step.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### **3. Home Page (HomePage.jsx)**
+- **About Us Section**: Displays the information about the company or product.
+- The **Header** and **NavBar** are included for navigation, with responsive styling.
+  
+#### **4. 404 Page (NotFoundPage.jsx)**
+- Custom error page displayed when a user navigates to a non-existent route. It offers a button to go back home and contact support.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To set up the project locally, follow these steps:
 
-### `npm run eject`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/espefy.git
+   cd espefy
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
